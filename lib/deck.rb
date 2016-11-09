@@ -5,6 +5,7 @@ class Deck
   attr_reader :deck
   private :deck
 
+# creates deck of cards
   def initialize
     @deck = Card::SUITS.map do |suit|
       Card::RANKS.map { |rank| Card.new(rank, suit) }
